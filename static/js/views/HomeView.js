@@ -13,7 +13,7 @@ export default class extends ClassView {
         <!-- Navbar -->
 
         <div class="home-navbar">
-            <img class="home-logo" src="https://cdn.pnghd.pics/data/715/merry-christmas-logo-png-1.png" alt="">
+            <img class="home-logo" src="https://www.pngitem.com/pimgs/m/257-2575276_christmas-logos-merry-christmas-logo-png-transparent-png.png" alt="">
             <div class="home-middle">
                 <a href="">Home</a>
                 <a href="">Cart</a>
@@ -62,23 +62,17 @@ export default class extends ClassView {
 
         <!-- Products -->
 
+        <div class="home-sale-products">
+            <h1>HOT-SALE PRODUCTS</h1>
+        </div>
+
         <div id="home-container-products"></div>
 
-        <div class="home-products">
-            <div class="home-detail-products">
-                <div class="home-image-products">
-                    <img src="https://salt.tikicdn.com/cache/w1200/ts/product/3e/dc/eb/ac26ae5f11c1cdc134e74d8ea8640d60.jpg" alt="">
-                </div>
-
-                <div class="home-name-products">
-                    <h1>Christmas</h1>
-                    <h3>1.08$</h3>
-                    <p>Christmas is a popular event for all people in the world</p>
-                </div>
-            </div>
-
-            <button class="home-button" id="home-button">Add to Cart</button>
+        <div class="home-sale-products">
+            <h1>HOT-SALE PRODUCTS</h1>
         </div>
+
+        <div id="home-container-products-2"></div>
 
     </div>
         `;
