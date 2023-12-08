@@ -87,6 +87,11 @@ body{
     align-items: center;
     box-shadow: 10px 10px 25px 10px rgba(0, 0, 0, 0.333), 0 10px 10px -5px rgba(0, 0, 0, 0.404);
     margin: 40px 0;
+    cursor: pointer;
+}
+
+.home-products:hover {
+    opacity: 0.9;
 }
 
 .home-detail-products{

@@ -5,6 +5,7 @@ import DetailView from "./views/DetailView.js";
 
 let data1 = [
     {
+        Id: '0',
         Image: [
             'https://salt.tikicdn.com/cache/w1200/ts/product/3e/dc/eb/ac26ae5f11c1cdc134e74d8ea8640d60.jpg',
             'https://salt.tikicdn.com/cache/w1200/ts/product/3e/dc/eb/ac26ae5f11c1cdc134e74d8ea8640d60.jpg',
@@ -16,6 +17,7 @@ let data1 = [
         Description: "",
     },
     {
+        Id: '1',
         Image: [
             'https://salt.tikicdn.com/cache/w1200/ts/product/3e/dc/eb/ac26ae5f11c1cdc134e74d8ea8640d60.jpg',
             'https://salt.tikicdn.com/cache/w1200/ts/product/3e/dc/eb/ac26ae5f11c1cdc134e74d8ea8640d60.jpg',
@@ -28,6 +30,7 @@ let data1 = [
     },
 
     {
+        Id: '2',
         Image: [
             'https://salt.tikicdn.com/cache/w1200/ts/product/3e/dc/eb/ac26ae5f11c1cdc134e74d8ea8640d60.jpg',
             'https://salt.tikicdn.com/cache/w1200/ts/product/3e/dc/eb/ac26ae5f11c1cdc134e74d8ea8640d60.jpg',
@@ -40,6 +43,7 @@ let data1 = [
     },
 
     {
+        Id: '3',
         Image: [
             'https://salt.tikicdn.com/cache/w1200/ts/product/3e/dc/eb/ac26ae5f11c1cdc134e74d8ea8640d60.jpg',
             'https://salt.tikicdn.com/cache/w1200/ts/product/3e/dc/eb/ac26ae5f11c1cdc134e74d8ea8640d60.jpg',
@@ -330,6 +334,7 @@ let data2 = [
     },
 ]
 
+
 const router = async () => {
     const route = [
         { path: '/login', view: LoginView },
@@ -337,15 +342,23 @@ const router = async () => {
         { path: '/', view: HomeView },
         { path: '/detail', view: DetailView },
     ];
-    const routeMap = route.find(value => value.path === location.pathname);
-    if (routeMap) {
-        const view = new routeMap.view();
-        console.log('routeMap: ', routeMap);
-        console.log('await view.getHtml(): ', await view.getHtml());
 
+    console.log('location.pathname: ', location.pathname);
+    let pathName = location.pathname;
+    if (pathName.includes('detail')) {
+        const array = pathName.split('/');
+        console.log('array: ', array);
+        loadDataItem(array[2]);
+        const view = new DetailView();
         document.getElementById('app').innerHTML = await view.getHtml();
-        if (routeMap.path === '/') {
-            loadData();
+    } else {
+        const routeMap = route.find(value => value.path === location.pathname);
+        if (routeMap) {
+            const view = new routeMap.view();
+            document.getElementById('app').innerHTML = await view.getHtml();
+            if (routeMap.path === '/') {
+                loadData();
+            }
         }
     }
 }
@@ -358,6 +371,7 @@ const navigateTo = url => {
 window.addEventListener('popstate', router)
 
 document.addEventListener("DOMContentLoaded", () => {
+
     document.body.addEventListener('click', (e) => {
         if (e.target.matches("[data-link]")) {
             e.preventDefault();
@@ -369,9 +383,22 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // Region Home
 
+
+const loadDataItem = (id) => {
+    console.log('id: ', id);
+    const itemClick = data1.find(item => item?.Id === id);
+    console.log('itemClick: ', itemClick);
+}
+
 const loadData = () => {
+    const parent = document.getElementById('home-container-products');
     for (let x of data1) {
-        console.log('x: ', x);
+        const aElement = document.createElement('a');
+        aElement.href = `detail/${x?.Id || 10}`;
+        aElement.addEventListener('click', (e) => {
+            e.preventDefault();
+            navigateTo(aElement.getAttribute('href'));
+        })
         const divProduct = document.createElement('div');
         divProduct.classList.add('home-products');
         divProduct.innerHTML = `
@@ -390,14 +417,14 @@ const loadData = () => {
     
         <button class="home-button" id="home-button">Add to Cart</button>
         `;
-        const parent = document.getElementById('home-container-products');
-        parent.appendChild(divProduct);
+
+        aElement.appendChild(divProduct);
+        parent.appendChild(aElement);
     }
 
     for (let x of data1) {
-        console.log('x: ', x);
         const divProduct = document.createElement('div');
-        divProduct.classList.add('home-products-2');
+        divProduct.classList.add('home-products');
         divProduct.innerHTML = `
         <div class="home-detail-products">
             <div class="home-image-products">
