@@ -8,9 +8,63 @@ export default class extends ClassView {
 
     async getHtml() {
         return `
-            <div>
-            
+        <div>
+            ${this.getHeader()}
+            <div class="detail-container">
+                <div class="detail-img">
+
+                    <div class="detail-img-big">
+                        <img src="https://i.ytimg.com/vi/L7gTNdPltEk/maxresdefault.jpg" class="img-big" id="detail-img-big">
+                    </div>
+
+                    <div class="detail-img-small">
+                        <div class="detail-img-part">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJTrrZlCuZGKurSpS6_Hltx72A_GwQQ93RSw&usqp=CAU"
+                                class="img-small" alt="" id="detail-img-1">
+                        </div>
+
+                        <div class="detail-img-part">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJTrrZlCuZGKurSpS6_Hltx72A_GwQQ93RSw&usqp=CAU"
+                                class="img-small" alt="" id="detail-img-2">
+                        </div>
+
+                        <div class="detail-img-part">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJTrrZlCuZGKurSpS6_Hltx72A_GwQQ93RSw&usqp=CAU"
+                                class="img-small" alt="" id="detail-img-3">
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="detail-product">
+                    <div class="detail-bulletin">
+                        <div>
+                            <h1>Christmas Cup</h1>
+                            <h3 class="detail-mota">
+                                Kích thước: Ly sứ cao 10cm, đường kính miệng ly 8.5cm
+                                Dung tích: 360ml
+                                In hình HD sắc nét, màu sắc bắt mắt.
+                                Cốc sứ men trắng, chất liệu tốt, an toàn cho sử dụng hàng ngày.
+                                Cốc có quai cầm tiện dụng.
+                                Trọng lượng: 400g
+                            </h3>
+                        </div>
+                    </div>
+
+                    <div class="detail-price">
+                        <h2>4.000$</h2>
+                    </div>
+                    <div class="detail-button">
+                        <div class="detail-button-buy" style="margin-right: 12px;">
+                            <h3 class="text-button">Buy now</h3>
+                        </div>
+                        <div class="detail-button-buy">
+                            <h3 class="text-button">Add to cart</h3>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </div>
         `;
     }
 }

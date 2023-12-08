@@ -348,9 +348,9 @@ const router = async () => {
     if (pathName.includes('detail')) {
         const array = pathName.split('/');
         console.log('array: ', array);
-        loadDataItem(array[2]);
         const view = new DetailView();
         document.getElementById('app').innerHTML = await view.getHtml();
+        loadDataItem(array[2]);
     } else {
         const routeMap = route.find(value => value.path === location.pathname);
         if (routeMap) {
@@ -388,6 +388,16 @@ const loadDataItem = (id) => {
     console.log('id: ', id);
     const itemClick = data1.find(item => item?.Id === id);
     console.log('itemClick: ', itemClick);
+    const imgBig = document.getElementById('detail-img-big');
+    const imhSmall1 = document.getElementById('detail-img-1');
+    const imhSmall2 = document.getElementById('detail-img-2');
+    const imhSmall3 = document.getElementById('detail-img-3');
+
+    imgBig.setAttribute('src', itemClick.Image[0]);
+    imhSmall1.setAttribute('src', itemClick.Image[1]);
+    imhSmall2.setAttribute('src', itemClick.Image[2]);
+    imhSmall3.setAttribute('src', itemClick.Image[3]);
+
 }
 
 const loadData = () => {

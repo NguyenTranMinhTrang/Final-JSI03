@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* background: url(https://marketplace.canva.com/EAFSZi_wwc0/1/0/1600w/canva-white-red-green-animated-merry-christmas-greeting-postcard-video-pV7QWjP_jLU.jpg);
+    background-position-y: -270px;
+    background-position-x: -100px; */
+    font-family: sans-serif;
+}
+
+.detail-container{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+
+.detail-img {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex: 0.65;
+}
+
+.detail-product {
+    height: 100%;
+    display: flex;
+    flex: 0.35;
+    flex-direction: column;
+    padding: 40px 40px;
+}
+
+.detail-img-big {
+    height: 65%;
+    padding: 40px;
+}
+
+.img-big {
+    height: 100%;
+    width: 100%;
+    border-radius: 16px;
+}
+
+.detail-img-small{
+    height: 35%;
+    display: flex;
+    flex-direction: row;
+    padding: 0 40px;
+    justify-content: space-between;
+
+}
+
+.detail-img-part {
+    height: 90%;
+    width: 240px;
+}
+
+.img-small {
+    height: 100%;
+    width: 100%;
+    border-radius: 16px;
+}
+
+.detail-mota {
+    margin-top: 10px;
+    font-size: 15px;
+    color: #696969;
+    margin-bottom: 10px ;
+}
+
+.detail-price {
+    color: #b00;
+}
+
+.detail-button{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}   
+
+.detail-button-buy{
+   flex:  1;
+   height: 40px;
+   border-radius: 8px;
+   background-color: #b00;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   cursor: pointer;
+   margin-top: 100px;
+}
+
+.detail-button-buy:hover {
+    opacity: 0.9;
+}
+
+.text-button {
+    color: white;
+}
