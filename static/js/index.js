@@ -2,6 +2,7 @@ import LoginView from "./views/LoginView.js";
 import RegisterView from "./views/RegisterView.js";
 import HomeView from "./views/HomeView.js";
 import DetailView from "./views/DetailView.js";
+import CartView from "./views/CartView.js";
 
 let data1 = [
     {
@@ -341,6 +342,8 @@ const router = async () => {
         { path: '/register', view: RegisterView },
         { path: '/', view: HomeView },
         { path: '/detail', view: DetailView },
+        { path: '/cart', view: CartView },
+
     ];
 
     console.log('location.pathname: ', location.pathname);
