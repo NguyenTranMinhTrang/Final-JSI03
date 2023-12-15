@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+.cart-all{
+    height: 100vh;
+    background-color: #b00;
+}
+
+.cart-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height: 100vh;
+}
+
+.cart-shopping{
+    padding: 70px;
+    height: 700px;
+    width: 1000px;
+    background-color: whitesmoke;
+}
+
+.cart-shopping-navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    color: black;
+    margin-bottom: 30px;
+}
+
+.cart-shopping-navbar h1{
+    font-size: 23px;
+}
+
+.cart-shopping-navbar h2{
+    font-size: 23px;
+}
+
+.cart-lines{
+    background-color: rgb(225, 225, 225);
+    height: 2px;
+    width: 100%;
+}
+
+.cart-products{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+}
+
+.cart-header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 50px;
+}
+
+.cart-header-title{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.cart-header-detail{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.cart-detail-item{
+    height: 100%;
+    width: 33%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cart-item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 75px;
+    margin: 16px 0;
+}
+
+.cart-unrealistic{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+.cart-unrealistic img{
+    height: 100%;
+    width: 70px;
+    
+}
+
+.cart-words{
+    font-size: 15px;
+    margin-left: 15px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cart-words h5{
+    color: #b00;
+    display: flex;
+}
+
+.cart-words h6{
+    font-size: 13px;
+    color: rgb(177, 177, 177);
+}
+
+.cart-return{
+    margin-top: 30px;
+}
+
+.cart-return i{
+    color: #b00;
+}
+
+.cart-return a{
+    text-decoration: none;
+    color: #b00;
+}
+
+.cart-order-summary{
+    background-color: rgb(236, 236, 236);
+    height: 700px;
+    width: 450px;
+    padding: 70px 35px;
+}
+
+.cart-summary{
+    font-size: 12px;
+    margin-bottom: 29px;
+}
+
+.cart-lines-second{
+    background-color: gainsboro;
+    height: 1px;
+    width: 100%;
+}
+
+.cart-sale-card{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px 0;
+}
+
+.cart-sale-card h4{
+    color: #b00;
+}
