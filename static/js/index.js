@@ -395,12 +395,15 @@ const loadDataItem = (id) => {
     const imhSmall1 = document.getElementById('detail-img-1');
     const imhSmall2 = document.getElementById('detail-img-2');
     const imhSmall3 = document.getElementById('detail-img-3');
+    const textDescription = document.getElementById('detail-description');
+    const textPrice = document.getElementById('detail-price');
 
     imgBig.setAttribute('src', itemClick.Image[0]);
     imhSmall1.setAttribute('src', itemClick.Image[1]);
     imhSmall2.setAttribute('src', itemClick.Image[2]);
     imhSmall3.setAttribute('src', itemClick.Image[3]);
-
+    textDescription.innerText = itemClick?.Description;
+    textPrice.innerText = itemClick?.Price;
 }
 
 const loadData = () => {

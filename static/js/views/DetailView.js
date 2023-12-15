@@ -40,19 +40,13 @@ export default class extends ClassView {
                     <div class="detail-bulletin">
                         <div>
                             <h1>Christmas Cup</h1>
-                            <h3 class="detail-mota">
-                                Kích thước: Ly sứ cao 10cm, đường kính miệng ly 8.5cm
-                                Dung tích: 360ml
-                                In hình HD sắc nét, màu sắc bắt mắt.
-                                Cốc sứ men trắng, chất liệu tốt, an toàn cho sử dụng hàng ngày.
-                                Cốc có quai cầm tiện dụng.
-                                Trọng lượng: 400g
+                            <h3 id="detail-description" class="detail-mota">
                             </h3>
                         </div>
                     </div>
 
                     <div class="detail-price">
-                        <h2>4.000$</h2>
+                        <h2 id="detail-price"></h2>
                     </div>
                     <div class="detail-button">
                         <div class="detail-button-buy" style="margin-right: 12px;">
