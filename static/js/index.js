@@ -3,6 +3,22 @@ import RegisterView from "./views/RegisterView.js";
 import HomeView from "./views/HomeView.js";
 import DetailView from "./views/DetailView.js";
 import CartView from "./views/CartView.js";
+import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+
+const firebaseConfig = {
+    apiKey: "AIzaSyCK2oLg4-PD3K7wyQpWZo1plNuaIGam1Cw",
+    authDomain: "final-project-79120.firebaseapp.com",
+    projectId: "final-project-79120",
+    storageBucket: "final-project-79120.appspot.com",
+    messagingSenderId: "324439090576",
+    appId: "1:324439090576:web:0ff902f69358401876bf15"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+
+const auth = getAuth();
 
 let data1 = [
     {
@@ -361,14 +377,30 @@ const router = async () => {
             document.getElementById('app').innerHTML = await view.getHtml();
             if (routeMap.path === '/') {
                 loadData();
+                handleClickItem();
+            } else if (routeMap.path === '/register') {
+                registerFunction();
+            } else if (routeMap.path === '/cart') {
+                cartFunction();
             }
         }
     }
 }
 
 const navigateTo = url => {
-    history.pushState(null, null, url);
-    router();
+    console.log('url: ', url);
+    if (url === 'http://localhost:3000/cart') {
+        const userId = localStorage.getItem('idUser');
+        if (userId) {
+            history.pushState(null, null, url);
+            router();
+        } else {
+            alert('You have not login yet. Please login to use cart!!!');
+        }
+    } else {
+        history.pushState(null, null, url);
+        router();
+    }
 };
 
 window.addEventListener('popstate', router)
@@ -415,8 +447,17 @@ const loadData = () => {
             e.preventDefault();
             navigateTo(aElement.getAttribute('href'));
         })
+
+        const button = document.createElement('button');
+        button.classList.add('home-button');
+        button.innerText = 'Add to Cart';
+        button.addEventListener('click', (e) => {
+            e.preventDefault();
+            console.log('x?.Id: ', x?.Id);
+        })
         const divProduct = document.createElement('div');
         divProduct.classList.add('home-products');
+        aElement.innerHTML = 
         divProduct.innerHTML = `
         <div class="home-detail-products">
             <div class="home-image-products">
@@ -430,9 +471,8 @@ const loadData = () => {
                 <p>Christmas is a popular event for all people in this world</p>
             </div>
         </div>
-    
-        <button class="home-button" id="home-button">Add to Cart</button>
         `;
+        divProduct.appendChild(button);
 
         aElement.appendChild(divProduct);
         parent.appendChild(aElement);
@@ -462,5 +502,99 @@ const loadData = () => {
     }
 }
 
+const handleClickItem = () => {
+
+}
+
 // Region Home
+
+const cartFunction = () => {
+    const cartsFromLocal = localStorage.getItem('carts');
+    const idUser = JSON.stringify(localStorage.getItem('idUser'));
+    let listCart = [];
+    if (cartsFromLocal) {
+        const dataParse = JSON.parse(cartsFromLocal);
+        listCart = dataParse[idUser].carts;
+    }
+    
+    const container = document.getElementById('cart-container-item');
+    for (const item of listCart) {
+        const divContainer = document.createElement('div');
+        divContainer.classList.add('cart-item');
+        divContainer.innerHTML = `
+        <div class="cart-header-detail">
+            <div class="cart-unrealistic">
+            <img src="https://salt.tikicdn.com/cache/w1200/ts/product/3e/dc/eb/ac26ae5f11c1cdc134e74d8ea8640d60.jpg" alt="">  
+        
+            <div class="cart-words">
+                <h3>Chirstmas socks</h3>
+                <h5>Design</h5>
+                <h6>Remove</h6>
+            </div>
+        </div>
+        </div>
+
+        <div class="cart-header-detail">
+            <div class="cart-detail-item">
+                <p><b>1</b></p>
+            </div>
+
+            <div class="cart-detail-item">
+                <p><b>$1.08</b></p>
+            </div>
+
+            <div class="cart-detail-item">
+                <p><b>$1.08</b></p>
+            </div>
+        </div>                              
+        `;
+        container.appendChild(divContainer);
+    }
+}
+
+const registerFunction = () => {
+    const registerbutton = document.getElementById('register-button');
+        const warning = document.getElementById('register-warning');
+
+        registerbutton.addEventListener('click', (e) => {
+            const email = document.getElementById('register-email').value;
+            const password = document.getElementById('register-password').value;
+            const confirmPassword = document.getElementById('register-confirm-password').value;
+          
+            if (email === "" || password === "" || confirmPassword === "") {
+                warning.innerText = "Fields should not be empty"
+            } else if (password !== confirmPassword) {
+                warning.innerText = "Passwords do not match"
+            } else {
+                createUserWithEmailAndPassword(auth, email, password)
+                    .then((userCredential) => {
+                        // Signed up 
+                        const user = userCredential.user;
+                        const idUser = user.uid;
+                        localStorage.setItem('idUser', JSON.stringify(idUser));
+                        navigateTo('/');
+                    })
+                    .catch((error) => {
+                        const errorCode = error.code;
+                        const errorMessage = error.message;
+                        // ..
+                        console.log(errorMessage);
+                       if (errorMessage.includes("auth/invalid-email")) {
+                        warning.innerText = "Invalid Email"
+                       }
+
+                       else if (errorMessage.includes("auth/weak-password")) {
+                         warning.innerText = "Password must be at least 6 characters"
+                       }
+
+                       else if (errorMessage.includes("auth/email-already-in-use")) {
+                        warning.innerText = "You already used this email"
+                       }
+                    });
+            }
+
+           
+        })
+}
+
 

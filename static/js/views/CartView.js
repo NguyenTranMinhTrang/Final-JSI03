@@ -39,32 +39,7 @@ export default class extends ClassView {
                             </div>
                         </div>
 
-                        <div class="cart-item">
-                            <div class="cart-header-detail">
-                                <div class="cart-unrealistic">
-                                    <img src="https://salt.tikicdn.com/cache/w1200/ts/product/3e/dc/eb/ac26ae5f11c1cdc134e74d8ea8640d60.jpg" alt="">  
-                                
-                                    <div class="cart-words">
-                                        <h3>Chirstmas socks</h3>
-                                        <h5>Design</h5>
-                                        <h6>Remove</h6>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="cart-header-detail">
-                                <div class="cart-detail-item">
-                                    <p><b>1</b></p>
-                                </div>
-
-                                <div class="cart-detail-item">
-                                    <p><b>$1.08</b></p>
-                                </div>
-
-                                <div class="cart-detail-item">
-                                    <p><b>$1.08</b></p>
-                                </div>
-                            </div>
+                        <div id="cart-container-item">
                         </div>
 
                         <div class="cart-item">
@@ -94,35 +69,6 @@ export default class extends ClassView {
                                 </div>
                             </div>
                         </div>
-
-                        <div class="cart-item">
-                            <div class="cart-header-detail">
-                                <div class="cart-unrealistic">
-                                    <img src="https://salt.tikicdn.com/cache/w1200/ts/product/3e/dc/eb/ac26ae5f11c1cdc134e74d8ea8640d60.jpg" alt="">  
-                                
-                                    <div class="cart-words">
-                                        <h3>Chirstmas socks</h3>
-                                        <h5>Design</h5>
-                                        <h6>Remove</h6>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="cart-header-detail">
-                                <div class="cart-detail-item">
-                                    <p><b>1</b></p>
-                                </div>
-
-                                <div class="cart-detail-item">
-                                    <p><b>$1.08</b></p>
-                                </div>
-
-                                <div class="cart-detail-item">
-                                    <p><b>$1.08</b></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
 
                     <div class="cart-return">
                         <i class="fa-solid fa-arrow-left"></i>

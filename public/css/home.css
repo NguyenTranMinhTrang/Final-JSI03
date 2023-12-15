@@ -90,6 +90,11 @@ body{
     cursor: pointer;
 }
 
+#home-container-products a {
+    color: black;
+    text-decoration: none;
+}
+
 .home-products:hover {
     opacity: 0.9;
 }
