@@ -13,7 +13,7 @@ export default class extends ClassView {
                 <div class="cart-shopping">
                     <div class="cart-shopping-navbar">
                         <h1>Shopping Cart</h1>
-                        <h2>3 Items</h2>
+                        <h2 id="cart-quality">0 Items</h2>
                     </div>
 
                     <div class="cart-lines"></div>
@@ -41,35 +41,6 @@ export default class extends ClassView {
 
                         <div id="cart-container-item">
                         </div>
-
-                        <div class="cart-item">
-                            <div class="cart-header-detail">
-                                <div class="cart-unrealistic">
-                                    <img src="https://salt.tikicdn.com/cache/w1200/ts/product/3e/dc/eb/ac26ae5f11c1cdc134e74d8ea8640d60.jpg" alt="">  
-                                
-                                    <div class="cart-words">
-                                        <h3>Chirstmas socks</h3>
-                                        <h5>Design</h5>
-                                        <h6>Remove</h6>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="cart-header-detail">
-                                <div class="cart-detail-item">
-                                    <p><b>1</b></p>
-                                </div>
-
-                                <div class="cart-detail-item">
-                                    <p><b>$1.08</b></p>
-                                </div>
-
-                                <div class="cart-detail-item">
-                                    <p><b>$1.08</b></p>
-                                </div>
-                            </div>
-                        </div>
-
                     <div class="cart-return">
                         <i class="fa-solid fa-arrow-left"></i>
                         <a href="">Continue Shopping</a>
@@ -85,7 +56,7 @@ export default class extends ClassView {
 
                     <div class="cart-sale-card">
                         <h3>Subtotal</h3>
-                        <h4>$1.08</h4>
+                        <h4 id="cart-total">$1.08</h4>
                     </div>
 
                     <div class="cart-sale-card">

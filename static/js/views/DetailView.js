@@ -39,7 +39,7 @@ export default class extends ClassView {
                 <div class="detail-product">
                     <div class="detail-bulletin">
                         <div>
-                            <h1>Christmas Cup</h1>
+                            <h1 id="detail-name">Christmas Cup</h1>
                             <h3 id="detail-description" class="detail-mota">
                             </h3>
                         </div>
