@@ -3,7 +3,7 @@ import RegisterView from "./views/RegisterView.js";
 import HomeView from "./views/HomeView.js";
 import DetailView from "./views/DetailView.js";
 import CartView from "./views/CartView.js";
-import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
+import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
 
 const firebaseConfig = {
@@ -286,6 +286,8 @@ const router = async () => {
                 loadData();
             } else if (routeMap.path === '/register') {
                 registerFunction();
+            } else if (routeMap.path === '/login') {
+                loginFuncion();
             } else if (routeMap.path === '/cart') {
                 cartFunction();
             }
@@ -542,10 +544,8 @@ const registerFunction = () => {
             createUserWithEmailAndPassword(auth, email, password)
                 .then((userCredential) => {
                     // Signed up 
-                    const user = userCredential.user;
-                    const idUser = user.uid;
-                    localStorage.setItem('idUser', JSON.stringify(idUser));
-                    navigateTo('/');
+                    navigateTo('/login');
+                    
                 })
                 .catch((error) => {
                     const errorCode = error.code;
@@ -571,9 +571,15 @@ const registerFunction = () => {
 }
 
 
-const loginfuncion = () => {
+const loginFuncion = () => {
     const button = document.getElementById("login-button")
     const warning = document.getElementById("login-warning")
+    const moveToRegister = document.getElementById("login-to-register");
+
+    moveToRegister.addEventListener('click', (e) => {
+        e.preventDefault();
+        navigateTo('/register');
+    })
 
     button.addEventListener("click", (e) => {
         const email = document.getElementById('login-email').value;
@@ -587,6 +593,9 @@ const loginfuncion = () => {
                 .then((userCredential) => {
                     // Signed in 
                     const user = userCredential.user;
+                    const idUser = user.uid;
+                    localStorage.setItem('idUser', JSON.stringify(idUser));
+                    navigateTo('/');
                     // ...
                 })
                 .catch((error) => {

@@ -25,10 +25,7 @@ export default class extends ClassView {
             </div>
 
             <div class="login-twosmallthings">
-                <div class="login-container-checkbox">
-                    <input type="checkbox" class="login-checkbox">
-                    <label for="checkbox" class="login-text">Remember Me</label>
-                </div>
+                <a class="login-text" href="/register" id="login-to-register">Make an account</a>
 
                 <a class="login-text" href="ForgotPassword.html">Forgort Password?</a>
             </div>
