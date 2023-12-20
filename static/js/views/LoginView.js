@@ -13,30 +13,32 @@ export default class extends ClassView {
             <div class="login-name">
                 <h2>Log In</h2>
             </div>
-    
+
             <div class="login-email">
-                <input type="email" placeholder="Email">
+                <input type="email" placeholder="Email" id="login-email">
             </div>
-    
+
+
+
             <div class="login-password">
-                <input type="password" placeholder="Password">
+                <input type="password" placeholder="Password" id="login-password">
             </div>
 
             <div class="login-twosmallthings">
-                <input type="checkbox">
-                <label for="checkbox">Remember Me</label>
-
-                <div class="login-forgotPassword">
-                    <p>Forgort Password?</p>
+                <div class="login-container-checkbox">
+                    <input type="checkbox" class="login-checkbox">
+                    <label for="checkbox" class="login-text">Remember Me</label>
                 </div>
+
+                <a class="login-text" href="ForgotPassword.html">Forgort Password?</a>
             </div>
-        
+
+            <h2 id="login-warning" class="login-warning"></h2>
 
             <div class="login-submit">
-                <button>Submit</button>
+                <button id="login-button">Submit</button>
             </div>
         </div>
-    </div>
-        `;
+    </div> `;
     }
 }

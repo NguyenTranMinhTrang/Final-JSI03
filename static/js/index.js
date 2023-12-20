@@ -99,7 +99,7 @@ let data = [
     },
     {
         id: '7',
-        Image:[
+        Image: [
             'https://cf.shopee.vn/file/881ed0cb3e3452fb2dbd2d7900476188',
             'https://trangphucdien.net/wp-content/uploads/2019/11/trang-phuc-noel-yeu-tinh-003-600x600.jpg',
             'https://my-live-02.slatic.net/p/a815f7ae323fea3c74884fe72fd08b40.jpg',
@@ -112,7 +112,7 @@ let data = [
 
     {
         id: '8',
-        Image:[
+        Image: [
             'https://winecity.vn/wp-content/uploads/2023/08/mau-hop-qua-noel.jpg',
             'https://product.hstatic.net/1000253397/product/hop-qua-giang-sinh-2021_71e896dfc7ec4da89d2fe1d3fb64bcda_1024x1024.jpg',
             'https://hopquatet.vn/wp-content/uploads/2020/07/Y-nghia-tang-qua-vao-Giang-sinh-min.jpg',
@@ -228,7 +228,7 @@ let data = [
             'https://cfimg.wowcher.co.uk/cdn-cgi/image/height=520,width=777,quality=85,format=auto/https://static.wowcher.co.uk/images/deal/25249312/962346.jpg',
             'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8uxAK-e1bRT46S0sey_dt0FACN5URkalS8mGPCvgvOW19bYQT4wPJT_NCcfwiorhdXtc&usqp=CAU',
             'https://img.ltwebstatic.com/images3_spmp/2023/08/11/10/169174500187cc2ea2d8ff8707548415dfc56afce8_thumbnail_720x.webp',
-            'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSQvJRQhBbB4MYMcEPeWzeC0xqRE6E-BkQY-QmLsLf8tF4sScxlyeO3-mJLL_z8yqNEoo&usqp=CAU',   
+            'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSQvJRQhBbB4MYMcEPeWzeC0xqRE6E-BkQY-QmLsLf8tF4sScxlyeO3-mJLL_z8yqNEoo&usqp=CAU',
         ],
         Name: "Christmas pillow covers",
         Price: "",
@@ -372,7 +372,7 @@ const groupByQuanlity = (cartList, newProduct) => {
                 quanlity: 1
             })
         }
-    } 
+    }
     return newCarts;
 }
 
@@ -485,7 +485,7 @@ const cartFunction = () => {
     quanlity.innerText = `${listCart.length} Items`;
 
     let totalAll = 0;
-    
+
     const container = document.getElementById('cart-container-item');
     const totalText = document.getElementById('cart-total');
     for (const item of listCart) {
@@ -527,47 +527,88 @@ const cartFunction = () => {
 
 const registerFunction = () => {
     const registerbutton = document.getElementById('register-button');
-        const warning = document.getElementById('register-warning');
+    const warning = document.getElementById('register-warning');
 
-        registerbutton.addEventListener('click', (e) => {
-            const email = document.getElementById('register-email').value;
-            const password = document.getElementById('register-password').value;
-            const confirmPassword = document.getElementById('register-confirm-password').value;
-          
-            if (email === "" || password === "" || confirmPassword === "") {
-                warning.innerText = "Fields should not be empty"
-            } else if (password !== confirmPassword) {
-                warning.innerText = "Passwords do not match"
-            } else {
-                createUserWithEmailAndPassword(auth, email, password)
-                    .then((userCredential) => {
-                        // Signed up 
-                        const user = userCredential.user;
-                        const idUser = user.uid;
-                        localStorage.setItem('idUser', JSON.stringify(idUser));
-                        navigateTo('/');
-                    })
-                    .catch((error) => {
-                        const errorCode = error.code;
-                        const errorMessage = error.message;
-                        // ..
-                        console.log(errorMessage);
-                       if (errorMessage.includes("auth/invalid-email")) {
+    registerbutton.addEventListener('click', (e) => {
+        const email = document.getElementById('register-email').value;
+        const password = document.getElementById('register-password').value;
+        const confirmPassword = document.getElementById('register-confirm-password').value;
+
+        if (email === "" || password === "" || confirmPassword === "") {
+            warning.innerText = "Fields should not be empty"
+        } else if (password !== confirmPassword) {
+            warning.innerText = "Passwords do not match"
+        } else {
+            createUserWithEmailAndPassword(auth, email, password)
+                .then((userCredential) => {
+                    // Signed up 
+                    const user = userCredential.user;
+                    const idUser = user.uid;
+                    localStorage.setItem('idUser', JSON.stringify(idUser));
+                    navigateTo('/');
+                })
+                .catch((error) => {
+                    const errorCode = error.code;
+                    const errorMessage = error.message;
+                    // ..
+                    console.log(errorMessage);
+                    if (errorMessage.includes("auth/invalid-email")) {
                         warning.innerText = "Invalid Email"
-                       }
+                    }
 
-                       else if (errorMessage.includes("auth/weak-password")) {
-                         warning.innerText = "Password must be at least 6 characters"
-                       }
+                    else if (errorMessage.includes("auth/weak-password")) {
+                        warning.innerText = "Password must be at least 6 characters"
+                    }
 
-                       else if (errorMessage.includes("auth/email-already-in-use")) {
+                    else if (errorMessage.includes("auth/email-already-in-use")) {
                         warning.innerText = "You already used this email"
-                       }
-                    });
-            }
+                    }
+                });
+        }
 
-           
-        })
+
+    })
 }
 
+
+const loginfuncion = () => {
+    const button = document.getElementById("login-button")
+    const warning = document.getElementById("login-warning")
+
+    button.addEventListener("click", (e) => {
+        const email = document.getElementById('login-email').value;
+        const password = document.getElementById('login-password').value;
+
+        if (email === "" || password === "") {
+            warning.innerText = "Fields should not be empty"
+
+        } else {
+            signInWithEmailAndPassword(auth, email, password)
+                .then((userCredential) => {
+                    // Signed in 
+                    const user = userCredential.user;
+                    // ...
+                })
+                .catch((error) => {
+                    const errorCode = error.code;
+                    const errorMessage = error.message;
+                    console.log(errorMessage);
+
+                    if (errorMessage.includes("auth/invalid-email")) {
+                        warning.innerText = "Invalid Email"
+                    }
+
+                    else if (errorMessage.includes("auth/weak-password")) {
+                        warning.innerText = "Password must be at least 6 characters"
+
+                    }
+                    else if (errorMessage.includes("auth/invalid-credential")) {
+                        warning.innerText = "Wrong password or email"
+                    }
+                });
+        }
+
+    }
+    )
+}
 
