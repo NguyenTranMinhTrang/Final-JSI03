@@ -31,7 +31,7 @@ let data = [
         ],
         Name: "Christmas socks",
         Price: "1.08",
-        Description: "",
+        Description: "Effortlessly elevate the holidays! These seasonal accessories transform ordinary spaces into luxurious places, embodying a fusion of sophistication, festivity, and functionality. Discover meticulously crafted decorations ranging from statement pieces for the mantel to adorable accents for the vanity.",
     },
     {
         Id: '1',
@@ -43,7 +43,7 @@ let data = [
         ],
         Name: "Christmas tree",
         Price: "1.08",
-        Description: "",
+        Description: "Effortlessly elevate the holidays! These seasonal accessories transform ordinary spaces into luxurious places, embodying a fusion of sophistication, festivity, and functionality. Discover meticulously crafted decorations ranging from statement pieces for the mantel to adorable accents for the vanity.",
     },
 
     {
@@ -56,7 +56,7 @@ let data = [
         ],
         Name: "Santa cup",
         Price: "1.08",
-        Description: "",
+        Description: "Effortlessly elevate the holidays! These seasonal accessories transform ordinary spaces into luxurious places, embodying a fusion of sophistication, festivity, and functionality. Discover meticulously crafted decorations ranging from statement pieces for the mantel to adorable accents for the vanity.",
     },
 
     {
@@ -69,7 +69,7 @@ let data = [
         ],
         Name: "Christmas socks",
         Price: "1.08",
-        Description: "",
+        Description: "Effortlessly elevate the holidays! These seasonal accessories transform ordinary spaces into luxurious places, embodying a fusion of sophistication, festivity, and functionality. Discover meticulously crafted decorations ranging from statement pieces for the mantel to adorable accents for the vanity.",
     },
 
     {
@@ -82,7 +82,7 @@ let data = [
         ],
         Name: "Christmas socks",
         Price: "1.08",
-        Description: "",
+        Description: "Effortlessly elevate the holidays! These seasonal accessories transform ordinary spaces into luxurious places, embodying a fusion of sophistication, festivity, and functionality. Discover meticulously crafted decorations ranging from statement pieces for the mantel to adorable accents for the vanity.",
     },
 
     {
@@ -95,7 +95,7 @@ let data = [
         ],
         Name: "Christmas socks",
         Price: "1.08",
-        Description: "",
+        Description: "Effortlessly elevate the holidays! These seasonal accessories transform ordinary spaces into luxurious places, embodying a fusion of sophistication, festivity, and functionality. Discover meticulously crafted decorations ranging from statement pieces for the mantel to adorable accents for the vanity.",
     },
     {
         id: '7',
@@ -106,8 +106,8 @@ let data = [
             'https://my-test-11.slatic.net/p/4d68457652a32736a67ba32b424b011d.jpg,'
         ],
         Name: "Christmas T-shirts",
-        Price: "",
-        Description: "",
+        Price: "1.08",
+        Description: "Effortlessly elevate the holidays! These seasonal accessories transform ordinary spaces into luxurious places, embodying a fusion of sophistication, festivity, and functionality. Discover meticulously crafted decorations ranging from statement pieces for the mantel to adorable accents for the vanity.",
     },
 
     {
@@ -119,8 +119,8 @@ let data = [
             'https://product.hstatic.net/1000163114/product/z2194873073612_ec0957e7b588f96088d9c0eaf8b95747_c6325d070d3c4ffdafdab520dcd25a6d_master.jpg',
         ],
         Name: "Christmas shirts",
-        Price: "",
-        Description: "",
+        Price: "1.08",
+        Description: "Effortlessly elevate the holidays! These seasonal accessories transform ordinary spaces into luxurious places, embodying a fusion of sophistication, festivity, and functionality. Discover meticulously crafted decorations ranging from statement pieces for the mantel to adorable accents for the vanity.",
     },
 
     {
@@ -132,8 +132,8 @@ let data = [
             'https://lzd-img-global.slatic.net/g/p/8aa1ad9fd2521c3259712966632f5851.jpg_960x960q80.jpg_.webp',
         ],
         Name: "Christmas claus costumes",
-        Price: "",
-        Description: "",
+        Price: "1.08",
+        Description: "Effortlessly elevate the holidays! These seasonal accessories transform ordinary spaces into luxurious places, embodying a fusion of sophistication, festivity, and functionality. Discover meticulously crafted decorations ranging from statement pieces for the mantel to adorable accents for the vanity.",
     },
 
     {
@@ -145,8 +145,8 @@ let data = [
             'https://saigonhoa.com/wp-content/uploads/2022/12/chuong-noel.jpg',
         ],
         Name: " Christmas hats",
-        Price: "",
-        Description: "",
+        Price: "1.08",
+        Description: "Effortlessly elevate the holidays! These seasonal accessories transform ordinary spaces into luxurious places, embodying a fusion of sophistication, festivity, and functionality. Discover meticulously crafted decorations ranging from statement pieces for the mantel to adorable accents for the vanity.",
     },
 
     {
@@ -158,8 +158,8 @@ let data = [
             'https://down-vn.img.susercontent.com/file/e9e58ce93184d7862945b44bbbb42449',
         ],
         Name: "Christmas slippers",
-        Price: "",
-        Description: "",
+        Price: "1.08",
+        Description: "Effortlessly elevate the holidays! These seasonal accessories transform ordinary spaces into luxurious places, embodying a fusion of sophistication, festivity, and functionality. Discover meticulously crafted decorations ranging from statement pieces for the mantel to adorable accents for the vanity.",
     },
 
     {
@@ -171,8 +171,8 @@ let data = [
             'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSW5Y6rgYKUPz-7wYpH23UD1CrDoApJXYSHU6kl2VIGsOarQKEWZO0kbfyJVW0ETHoOu1s&usqp=CAU',
         ],
         Name: "Christmas led lights",
-        Price: "",
-        Description: "",
+        Price: "1.08",
+        Description: "Effortlessly elevate the holidays! These seasonal accessories transform ordinary spaces into luxurious places, embodying a fusion of sophistication, festivity, and functionality. Discover meticulously crafted decorations ranging from statement pieces for the mantel to adorable accents for the vanity.",
     },
 
     {
@@ -184,8 +184,8 @@ let data = [
             'https://lzd-img-global.slatic.net/g/ff/kf/S7cc642f0b4b645b6b5cc4b23b00e0b5bx.jpg_720x720q80.jpg',
         ],
         Name: "Christmas tree",
-        Price: "",
-        Description: "",
+        Price: "1.08",
+        Description: "Effortlessly elevate the holidays! These seasonal accessories transform ordinary spaces into luxurious places, embodying a fusion of sophistication, festivity, and functionality. Discover meticulously crafted decorations ranging from statement pieces for the mantel to adorable accents for the vanity.",
     },
 
     {
@@ -197,29 +197,29 @@ let data = [
             'https://down-vn.img.susercontent.com/file/888f019300bdab10a4fd4341c6e4d98b'
         ],
         Name: "Christmas ornaments",
-        Price: "",
-        Description: "",
+        Price: "1.08",
+        Description: "Effortlessly elevate the holidays! These seasonal accessories transform ordinary spaces into luxurious places, embodying a fusion of sophistication, festivity, and functionality. Discover meticulously crafted decorations ranging from statement pieces for the mantel to adorable accents for the vanity.",
     },
 
     {
         id: '15',
         Image: "",
         Name: "Christmas stocking",
-        Price: "",
-        Description: "",
+        Price: "1.08",
+        Description: "Effortlessly elevate the holidays! These seasonal accessories transform ordinary spaces into luxurious places, embodying a fusion of sophistication, festivity, and functionality. Discover meticulously crafted decorations ranging from statement pieces for the mantel to adorable accents for the vanity.",
     },
 
     {
         id: '16',
-        Image: "",
+        Price: "1.08",
         Name: "Christmas homeware products",
-        Price: [
+        Image: [
             'https://blog.btaskee.com/wp-content/uploads/2020/12/lam-qua-cau-tuyet-handmade-1280x720.jpg',
             'https://nhaxinhplaza.vn/wp-content/uploads/cach-lam-qua-cau-tuyet.jpg',
             'https://vn-test-11.slatic.net/p/f0e86248e3cf5fcccd23827872debecd.jpg',
             'https://salt.tikicdn.com/ts/product/28/ba/bd/d8d587f8b4c4c2fbd590020805f65c9b.jpg',
         ],
-        Description: "",
+        Description: "Effortlessly elevate the holidays! These seasonal accessories transform ordinary spaces into luxurious places, embodying a fusion of sophistication, festivity, and functionality. Discover meticulously crafted decorations ranging from statement pieces for the mantel to adorable accents for the vanity.",
     },
 
     {
@@ -231,8 +231,8 @@ let data = [
             'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSQvJRQhBbB4MYMcEPeWzeC0xqRE6E-BkQY-QmLsLf8tF4sScxlyeO3-mJLL_z8yqNEoo&usqp=CAU',
         ],
         Name: "Christmas pillow covers",
-        Price: "",
-        Description: "",
+        Price: "1.08",
+        Description: "Effortlessly elevate the holidays! These seasonal accessories transform ordinary spaces into luxurious places, embodying a fusion of sophistication, festivity, and functionality. Discover meticulously crafted decorations ranging from statement pieces for the mantel to adorable accents for the vanity.",
     },
 
     {
@@ -241,8 +241,8 @@ let data = [
             ''
         ],
         Name: "Christmas wreath",
-        Price: "",
-        Description: "",
+        Price: "1.08",
+        Description: "Effortlessly elevate the holidays! These seasonal accessories transform ordinary spaces into luxurious places, embodying a fusion of sophistication, festivity, and functionality. Discover meticulously crafted decorations ranging from statement pieces for the mantel to adorable accents for the vanity.",
     },
 
     {
@@ -254,8 +254,8 @@ let data = [
             'https://i.pinimg.com/736x/35/0e/c7/350ec72a867eab7372f8e9c6451c2bdf.jpg',
         ],
         Name: "Christmas wooden ornaments",
-        Price: "",
-        Description: "",
+        Price: "1.08",
+        Description: "Effortlessly elevate the holidays! These seasonal accessories transform ordinary spaces into luxurious places, embodying a fusion of sophistication, festivity, and functionality. Discover meticulously crafted decorations ranging from statement pieces for the mantel to adorable accents for the vanity.",
     },
 ]
 
@@ -381,9 +381,9 @@ const groupByQuanlity = (cartList, newProduct) => {
 const addCart = (x) => {
     const carts = localStorage.getItem('carts');
     const idUser = JSON.parse(localStorage.getItem('idUser'));
-    if (idUser) {
-        if (carts) {
-            const cartList = JSON.parse(carts) || {};
+    if (idUser  && carts) {
+        const cartList = JSON.parse(carts) || {};
+        if (cartList[idUser]) {
             const newListCarts = groupByQuanlity(cartList[idUser], x);
             const newCarts = {
                 ...cartList,
@@ -492,6 +492,7 @@ const cartFunction = () => {
     const totalText = document.getElementById('cart-total');
     for (const item of listCart) {
         const total = Math.round(Number(item?.quanlity) * Number(item?.Price) * 100) / 100;
+        console.log('total: ', total);
         totalAll += total;
         const divContainer = document.createElement('div');
         divContainer.classList.add('cart-item');
@@ -525,6 +526,7 @@ const cartFunction = () => {
         container.appendChild(divContainer);
     }
     totalText.innerText = `$${totalAll}`;
+    document.getElementById('cart-total-all').innerText = `$${totalAll + 3.04}`;
 }
 
 const registerFunction = () => {

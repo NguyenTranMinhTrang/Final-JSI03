@@ -11,6 +11,7 @@ body{
 .cart-all{
     height: 100vh;
     width: 100%;
+    padding: 12px;
     background-color: #b00;
     display: flex;
     align-items: center;

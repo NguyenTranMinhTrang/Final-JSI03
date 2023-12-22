@@ -75,7 +75,7 @@ export default class extends ClassView {
 
                 <div class="cart-sale-card">
                     <h3>Total</h3>
-                    <h4>$4.12</h4>
+                    <h4 id="cart-total-all">$4.12</h4>
                 </div>  
 
                 <div class="cart-lines-second"></div>
