@@ -38,8 +38,8 @@ export default class extends ClassView {
                         </div>
                     </div>
 
-                    <div id="cart-container-item">
-                    </div>
+                    <div id="cart-container-item"></div>
+
                     <div class="cart-return">
                         <i class="fa-solid fa-arrow-left"></i>
                         <a href="">Continue Shopping</a>
@@ -48,6 +48,7 @@ export default class extends ClassView {
 
                 
             </div>
+
             <div class="cart-order-summary">
                 <div class="cart-summary">
                     <h1>Oder summary</h1>
@@ -72,9 +73,10 @@ export default class extends ClassView {
 
                 <div class="cart-lines-second"></div>
 
-                <div class="cart-total">
-
-                </div>
+                <div class="cart-sale-card">
+                    <h3>Total</h3>
+                    <h4>$4.12</h4>
+                </div>  
 
                 <div class="cart-lines-second"></div>
 
