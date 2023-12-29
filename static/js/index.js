@@ -31,7 +31,7 @@ let data = [
         ],
         Name: "Christmas socks",
         Price: "1.08",
-        Description: "Effortlessly elevate the holidays! These seasonal accessories transform ordinary spaces into luxurious places, embodying a fusion of sophistication, festivity, and functionality. Discover meticulously crafted decorations ranging from statement pieces for the mantel to adorable accents for the vanity.",
+        Description: "A Christmas stocking is an empty sock or sock-shaped bag that is hung on Saint Nicholas Day or Christmas Eve",
     },
     {
         Id: '1',
@@ -43,7 +43,7 @@ let data = [
         ],
         Name: "Christmas tree",
         Price: "1.08",
-        Description: "Effortlessly elevate the holidays! These seasonal accessories transform ordinary spaces into luxurious places, embodying a fusion of sophistication, festivity, and functionality. Discover meticulously crafted decorations ranging from statement pieces for the mantel to adorable accents for the vanity.",
+        Description: "A Christmas tree is a decorated tree, usually an evergreen conifer, such as a spruce, pine or fir, or an artificial tree of similar appearance, associated with the celebration of Christmas.",
     },
 
     {
@@ -56,7 +56,7 @@ let data = [
         ],
         Name: "Santa cup",
         Price: "1.08",
-        Description: "Effortlessly elevate the holidays! These seasonal accessories transform ordinary spaces into luxurious places, embodying a fusion of sophistication, festivity, and functionality. Discover meticulously crafted decorations ranging from statement pieces for the mantel to adorable accents for the vanity.",
+        Description: "The Santa Claus Cup is an annual international figure skating competition which is generally held in late November or early December in Budapest, Hungary.",
     },
 
     {
@@ -67,26 +67,26 @@ let data = [
             'https://cf.shopee.vn/file/70c71a876078cd669c22f8bf69b04784',
             'https://cf.shopee.vn/file/sg-11134201-22100-wtytpr05m5ivd0',
         ],
-        Name: "Christmas socks",
+        Name: "Christmas gloves",
         Price: "1.08",
-        Description: "Effortlessly elevate the holidays! These seasonal accessories transform ordinary spaces into luxurious places, embodying a fusion of sophistication, festivity, and functionality. Discover meticulously crafted decorations ranging from statement pieces for the mantel to adorable accents for the vanity.",
+        Description: "Effortlessly elevate the holidays! These seasonal accessories transform ordinary spaces into luxurious places, embodying a fusion of sophistication, festivity, and functionality.",
     },
 
     {
-        id: '4',
+        Id: '4',
         Image: [
             'https://mona.vn/wp-content/uploads/2019/08/9612322246_1177161717.jpg',
             'https://mona.vn/wp-content/uploads/2022/05/vong-nguyet-que-noel-mona-1.jpg',
             'https://salt.tikicdn.com/cache/w1200/ts/product/98/79/df/ebddabbd80adc4f8d08c5d04805308dc.jpg',
             'https://dathangsi.vn/upload/products/2022/10/0404-vong-hoa-trang-tri-noel-40cm-co-den.jpg',
         ],
-        Name: "Christmas socks",
+        Name: "Laurel wreath",
         Price: "1.08",
-        Description: "Effortlessly elevate the holidays! These seasonal accessories transform ordinary spaces into luxurious places, embodying a fusion of sophistication, festivity, and functionality. Discover meticulously crafted decorations ranging from statement pieces for the mantel to adorable accents for the vanity.",
+        Description: "A laurel wreath is a round wreath made of connected branches and leaves of the bay laurel (Laurus nobilis), an aromatic broadleaf evergreen",
     },
 
     {
-        id: '5',
+        Id: '5',
         Image: [
             'https://salt.tikicdn.com/cache/w1200/ts/product/3e/dc/eb/ac26ae5f11c1cdc134e74d8ea8640d60.jpg',
             'https://trangtrinoel.vn/wp-content/uploads/2017/09/do-giang-sinh-cho-be-gai.jpg',
@@ -95,10 +95,10 @@ let data = [
         ],
         Name: "Christmas socks",
         Price: "1.08",
-        Description: "Effortlessly elevate the holidays! These seasonal accessories transform ordinary spaces into luxurious places, embodying a fusion of sophistication, festivity, and functionality. Discover meticulously crafted decorations ranging from statement pieces for the mantel to adorable accents for the vanity.",
+        Description: "Effortlessly elevate the holidays! These seasonal accessories transform ordinary spaces into luxurious places, embodying a fusion of sophistication, festivity, and functionality. ",
     },
     {
-        id: '7',
+        Id: '7',
         Image: [
             'https://cf.shopee.vn/file/881ed0cb3e3452fb2dbd2d7900476188',
             'https://trangphucdien.net/wp-content/uploads/2019/11/trang-phuc-noel-yeu-tinh-003-600x600.jpg',
@@ -107,11 +107,11 @@ let data = [
         ],
         Name: "Christmas T-shirts",
         Price: "1.08",
-        Description: "Effortlessly elevate the holidays! These seasonal accessories transform ordinary spaces into luxurious places, embodying a fusion of sophistication, festivity, and functionality. Discover meticulously crafted decorations ranging from statement pieces for the mantel to adorable accents for the vanity.",
+        Description: "Christmas Tree Sweatshirt, Christmas Vintage T-Shirt, Christmas Shirts for Women, Christmas Crewneck, Christmas Sweater, Winter Hoodie",
     },
 
     {
-        id: '8',
+        Id: '8',
         Image: [
             'https://winecity.vn/wp-content/uploads/2023/08/mau-hop-qua-noel.jpg',
             'https://product.hstatic.net/1000253397/product/hop-qua-giang-sinh-2021_71e896dfc7ec4da89d2fe1d3fb64bcda_1024x1024.jpg',
@@ -120,11 +120,11 @@ let data = [
         ],
         Name: "Christmas shirts",
         Price: "1.08",
-        Description: "Effortlessly elevate the holidays! These seasonal accessories transform ordinary spaces into luxurious places, embodying a fusion of sophistication, festivity, and functionality. Discover meticulously crafted decorations ranging from statement pieces for the mantel to adorable accents for the vanity.",
+        Description: "Christmas Tree Sweatshirt, Christmas Vintage T-Shirt, Christmas Shirts for Women, Christmas Crewneck, Christmas Sweater, Winter Hoodie",
     },
 
     {
-        id: '9',
+        Id: '9',
         Image: [
             'https://mona.vn/wp-content/uploads/2019/10/qua-chau-trang-tri-noel-2.jpg',
             'https://phukiengiangsinh.vn/wp-content/uploads/2022/04/chau-noel-chau-kieu-6cm-1.jpg',
@@ -133,11 +133,11 @@ let data = [
         ],
         Name: "Christmas claus costumes",
         Price: "1.08",
-        Description: "Effortlessly elevate the holidays! These seasonal accessories transform ordinary spaces into luxurious places, embodying a fusion of sophistication, festivity, and functionality. Discover meticulously crafted decorations ranging from statement pieces for the mantel to adorable accents for the vanity.",
+        Description: "Santa hat, Christmas hat, Santa Claus Christmas hat with soft white fur lining, pom pom Christmas hat, Christmas party hat, adult Santa hat",
     },
 
     {
-        id: '10',
+        Id: '10',
         Image: [
             'https://banner2.cleanpng.com/20180215/jaw/kisspng-mrs-claus-jingle-bell-christmas-decoration-clip-a-transparent-christmas-cliparts-5a85f3951e1812.5349831815187280851233.jpg',
             'https://down-vn.img.susercontent.com/file/f9413afa599c3ac572b5402dc77ea05a_tn',
@@ -146,11 +146,11 @@ let data = [
         ],
         Name: " Christmas hats",
         Price: "1.08",
-        Description: "Effortlessly elevate the holidays! These seasonal accessories transform ordinary spaces into luxurious places, embodying a fusion of sophistication, festivity, and functionality. Discover meticulously crafted decorations ranging from statement pieces for the mantel to adorable accents for the vanity.",
+        Description: "Knitted Santa Hat, Hand Knitted Chunky Christmas Hat, Unique Christmas Gift, Stocking filler festive holiday hat",
     },
 
     {
-        id: '11',
+        Id: '11',
         Image: [
             'https://img.pikbest.com/ai/illus_our/20230427/355640c5c6785937148f1eaf1aa6a033.jpg!w700wp',
             'https://trangphucdien.net/wp-content/uploads/2020/12/mo-hinh-ong-gia-noel-bom-hoi-8-600x600.jpg',
@@ -159,11 +159,11 @@ let data = [
         ],
         Name: "Christmas slippers",
         Price: "1.08",
-        Description: "Effortlessly elevate the holidays! These seasonal accessories transform ordinary spaces into luxurious places, embodying a fusion of sophistication, festivity, and functionality. Discover meticulously crafted decorations ranging from statement pieces for the mantel to adorable accents for the vanity.",
+        Description: "Crochet Christmas Pattern, Grinch Slippers Crochet, Santa Claus & Reindeer Slippers Pattern, Christmas Tree Slippers Pattern",
     },
 
     {
-        id: '12',
+        Id: '12',
         Image: [
             'https://cdn.tgdd.vn/2021/12/CookRecipe/CookTipsNote/12-cach-trang-tri-banh-kem-noel-cuc-ky-dep-mat-cho-dip-giang-tipsnote-800x450-6.png',
             'https://img.ltwebstatic.com/images3_spmp/2023/09/23/2a/1695456165d5a779ea305fdda0e2bb8af7f74c5bde_square_thumbnail_405x552.jpg',
@@ -172,11 +172,11 @@ let data = [
         ],
         Name: "Christmas led lights",
         Price: "1.08",
-        Description: "Effortlessly elevate the holidays! These seasonal accessories transform ordinary spaces into luxurious places, embodying a fusion of sophistication, festivity, and functionality. Discover meticulously crafted decorations ranging from statement pieces for the mantel to adorable accents for the vanity.",
+        Description: "winkly Curtain-App-Controlled LED Christmas Lights with 210 RGB+W (16 Million Colors + Warm White) LEDs. 5 by 7 feet. Clear Wire. Indoor and Outdoor Smart Lighting Decoration",
     },
 
     {
-        id: '13',
+        Id: '13',
         Image: [
             'https://cdn.tgdd.vn/Files/2022/11/05/1484413/ong-gia-noel-cuoi-may-con-tuan-loc-ten-cua-chung-la-gi-202211050906448039.jpg',
             'https://cdn-img-v2.webbnc.net/uploadv2/web/10/10846/product/2018/10/27/12/48/1540643497_mx-cxog1tl-01.jpg',
@@ -185,11 +185,11 @@ let data = [
         ],
         Name: "Christmas tree",
         Price: "1.08",
-        Description: "Effortlessly elevate the holidays! These seasonal accessories transform ordinary spaces into luxurious places, embodying a fusion of sophistication, festivity, and functionality. Discover meticulously crafted decorations ranging from statement pieces for the mantel to adorable accents for the vanity.",
+        Description: "A Christmas tree is a decorated tree, usually an evergreen conifer, such as a spruce, pine or fir, or an artificial tree of similar appearance, associated with the celebration of Christmas.",
     },
 
     {
-        id: '14',
+        Id: '14',
         Image: [
             'https://png.pngtree.com/thumb_back/fw800/background/20231007/pngtree-joyful-3d-illustration-of-santa-claus-with-christmas-gift-on-festive-image_13543067.png',
             'https://trangphucdien.net/wp-content/uploads/2020/12/cong-chao-noel-giang-sinh-1.jpg',
@@ -202,7 +202,7 @@ let data = [
     },
 
     {
-        id: '15',
+        Id: '15',
         Image: "",
         Name: "Christmas stocking",
         Price: "1.08",
@@ -210,7 +210,7 @@ let data = [
     },
 
     {
-        id: '16',
+        Id: '16',
         Price: "1.08",
         Name: "Christmas homeware products",
         Image: [
@@ -223,7 +223,7 @@ let data = [
     },
 
     {
-        id: '17',
+        Id: '17',
         Image: [
             'https://cfimg.wowcher.co.uk/cdn-cgi/image/height=520,width=777,quality=85,format=auto/https://static.wowcher.co.uk/images/deal/25249312/962346.jpg',
             'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8uxAK-e1bRT46S0sey_dt0FACN5URkalS8mGPCvgvOW19bYQT4wPJT_NCcfwiorhdXtc&usqp=CAU',
@@ -231,29 +231,6 @@ let data = [
             'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSQvJRQhBbB4MYMcEPeWzeC0xqRE6E-BkQY-QmLsLf8tF4sScxlyeO3-mJLL_z8yqNEoo&usqp=CAU',
         ],
         Name: "Christmas pillow covers",
-        Price: "1.08",
-        Description: "Effortlessly elevate the holidays! These seasonal accessories transform ordinary spaces into luxurious places, embodying a fusion of sophistication, festivity, and functionality. Discover meticulously crafted decorations ranging from statement pieces for the mantel to adorable accents for the vanity.",
-    },
-
-    {
-        id: '18',
-        Image: [
-            ''
-        ],
-        Name: "Christmas wreath",
-        Price: "1.08",
-        Description: "Effortlessly elevate the holidays! These seasonal accessories transform ordinary spaces into luxurious places, embodying a fusion of sophistication, festivity, and functionality. Discover meticulously crafted decorations ranging from statement pieces for the mantel to adorable accents for the vanity.",
-    },
-
-    {
-        id: '19',
-        Image: [
-            'https://www.makermama.com/wp-content/uploads/2021/11/Etched-Birch-Ornaments-7-e1637621880628.jpeg',
-            'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4i8k9DyzieppiGSmmwA-FSmNlq2DiH3kb9grOycdActNOknbuD8BWH4Vzghxw7QeT5JM&usqp=CAU',
-            'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-EQ6LWlMLcdsxqzAjo-1dIMzzSqmXqN6gm0aOPo2WUq9oyBizw0mPEVdfdp0RcPFw2Eg&usqp=CAU',
-            'https://i.pinimg.com/736x/35/0e/c7/350ec72a867eab7372f8e9c6451c2bdf.jpg',
-        ],
-        Name: "Christmas wooden ornaments",
         Price: "1.08",
         Description: "Effortlessly elevate the holidays! These seasonal accessories transform ordinary spaces into luxurious places, embodying a fusion of sophistication, festivity, and functionality. Discover meticulously crafted decorations ranging from statement pieces for the mantel to adorable accents for the vanity.",
     },
@@ -428,7 +405,7 @@ const loadData = () => {
                 <h1>${x.Name}</h1>
                 <h3>$${x.Price}</h3>
                 <div class="home-name-lines"></div>
-                <p>Christmas is a popular event for all people in this world</p>
+                <p>${x.Description}</p>
             </div>
         </div>
         <button btn-add-cart class="home-button">Add to Cart</button>
@@ -461,7 +438,7 @@ const loadData = () => {
                 <h1>${x.Name}</h1>
                 <h3>${x.Price}</h3>
                 <div class="home-name-lines"></div>
-                <p>Christmas is a popular event for all people in this world</p>
+                <p>${x.Description}</p>
             </div>
         </div>
     

@@ -14,7 +14,7 @@ export default class {
     getHeader() {
         return `
         <div class="home-navbar">
-            <img class="home-logo" src="https://www.pngitem.com/pimgs/m/257-2575276_christmas-logos-merry-christmas-logo-png-transparent-png.png" alt="">
+            <img class="home-logo" src="http://localhost:3000/images/logo.png" alt="">
             <div class="home-middle">
                 <a data-link href="/">Home</a>
                 <a  data-link href="/cart">Cart</a>
