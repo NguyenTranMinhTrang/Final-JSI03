@@ -276,6 +276,7 @@ const navigateTo = url => {
     console.log('url: ', url);
     if (url === 'http://localhost:3000/cart') {
         const userId = localStorage.getItem('idUser');
+        console.log('userId: ', userId);
         if (userId) {
             history.pushState(null, null, url);
             router();
@@ -358,7 +359,7 @@ const groupByQuanlity = (cartList, newProduct) => {
 const addCart = (x) => {
     const carts = localStorage.getItem('carts');
     const idUser = JSON.parse(localStorage.getItem('idUser'));
-    if (idUser  && carts) {
+    if (idUser) {
         const cartList = JSON.parse(carts) || {};
         if (cartList[idUser]) {
             const newListCarts = groupByQuanlity(cartList[idUser], x);
@@ -367,7 +368,7 @@ const addCart = (x) => {
                 [idUser]: newListCarts
             }
             localStorage.setItem('carts', JSON.stringify(newCarts));
-        } else {
+        } else { 
             const cartList = groupByQuanlity([], x);
             const newCarts = {
                 [idUser]: cartList
