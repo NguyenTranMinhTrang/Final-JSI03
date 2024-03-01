@@ -27,7 +27,7 @@ export default class extends ClassView {
             <div class="login-twosmallthings">
                 <a class="login-text" href="/register" id="login-to-register">Make an account</a>
 
-                <a class="login-text" href="ForgotPassword.html">Forgort Password?</a>
+                <a class="login-text" href="ForgotPassword.html">Forgot Password?</a>
             </div>
 
             <h2 id="login-warning" class="login-warning"></h2>

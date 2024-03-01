@@ -1,5 +1,5 @@
 import LoginView from "./views/LoginView.js";
-import RegisterView from "./views/RegisterView.js";
+import RegisterView from "./views/View.js";
 import HomeView from "./views/HomeView.js";
 import DetailView from "./views/DetailView.js";
 import CartView from "./views/CartView.js";
@@ -453,6 +453,11 @@ const loadData = () => {
 // Region Home
 
 const cartFunction = () => {
+    const goBackButton = document.getElementById('cart-goback');
+    goBackButton?.addEventListener('click', (e) => {
+        e.preventDefault();
+        navigateTo('/');
+    })
     const cartsFromLocal = localStorage.getItem('carts');
     const idUser = JSON.parse(localStorage.getItem('idUser'));
     let listCart = [];
@@ -533,7 +538,7 @@ const registerFunction = () => {
                     // ..
                     console.log(errorMessage);
                     if (errorMessage.includes("auth/invalid-email")) {
-                        warning.innerText = "Invalid Email"
+                        warning.innerText = "Invalid Email" 
                     }
 
                     else if (errorMessage.includes("auth/weak-password")) {

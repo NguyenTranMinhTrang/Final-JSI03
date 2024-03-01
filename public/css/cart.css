@@ -180,3 +180,7 @@ body{
 .cart-sale-card h4{
     color: #b00;
 }
+
+#cart-goback {
+    cursor: pointer;
+}

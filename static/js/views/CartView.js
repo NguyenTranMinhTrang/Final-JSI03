@@ -42,7 +42,7 @@ export default class extends ClassView {
 
                     <div class="cart-return">
                         <i class="fa-solid fa-arrow-left"></i>
-                        <a href="">Continue Shopping</a>
+                        <a id="cart-goback">Continue Shopping</a>
                     </div>
                 </div>
 
